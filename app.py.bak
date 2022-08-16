@@ -44,4 +44,5 @@ def hello():
     return response.content
     
     
-app.run()
+if __name__ == '__main__':
+    app.run()
