@@ -15,6 +15,9 @@ def hello():
     c = content['cstone']
     k = content['request']
     s = content['ssauth']
+    
+    if c is NoneType or k is NoneType or s is NoneType:
+        return failure
 
     cookies = {
         'CStoneSessionID': c,
@@ -42,6 +45,7 @@ def hello():
     }
     response = requests.get('https://swinternalbiapps.katyisd.org/StudentSchedule/Default.aspx', cookies=cookies, headers=headers)
     return response.content
+    
     
     
 if __name__ == '__main__':

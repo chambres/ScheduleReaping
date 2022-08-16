@@ -15,6 +15,9 @@ def hello():
     c = content['cstone']
     k = content['request']
     s = content['ssauth']
+    
+    if c is NoneType or k is NoneType or s is NoneType:
+        return "failure"
 
     cookies = {
         'CStoneSessionID': c,
