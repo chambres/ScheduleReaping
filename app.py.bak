@@ -12,13 +12,13 @@ def hello():
 
     content = request.json
     
-    print(content
+    print(content)
     
     c = content['cstone']
     k = content['request']
     s = content['ssauth']
     
-    if c is NoneType or k is NoneType or s is NoneType:
+    if c is None or k is None or s is None:
         return "failure"
 
     cookies = {

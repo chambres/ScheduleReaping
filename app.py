@@ -18,8 +18,8 @@ def hello():
     k = content['request']
     s = content['ssauth']
     
-    if c is NoneType or k is NoneType or s is NoneType:
-        return "failure"
+    # if c is None or k is None or s is None:
+        # return "failure"
 
     cookies = {
         'CStoneSessionID': c,
