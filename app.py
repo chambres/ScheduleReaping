@@ -12,6 +12,8 @@ def hello():
 
     content = request.json
     
+    print(content)
+    
     c = content['cstone']
     k = content['request']
     s = content['ssauth']
